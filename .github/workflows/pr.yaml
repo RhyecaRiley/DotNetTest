@@ -1,7 +1,9 @@
 name: dotnet package
 
 on: 
-  pull-request:
+  pull_request:
+    branches-ignore:
+      - main
   
 jobs:
   build:
