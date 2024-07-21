@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\ContosoPizza\\ContosoPizza.csproj": {}
+    "C:\\Repos\\DotNetTest\\ContosoPizza.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\ContosoPizza\\ContosoPizza.csproj": {
+    "C:\\Repos\\DotNetTest\\ContosoPizza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\ContosoPizza\\ContosoPizza.csproj",
+        "projectUniqueName": "C:\\Repos\\DotNetTest\\ContosoPizza.csproj",
         "projectName": "ContosoPizza",
-        "projectPath": "C:\\Repos\\ContosoPizza\\ContosoPizza.csproj",
+        "projectPath": "C:\\Repos\\DotNetTest\\ContosoPizza.csproj",
         "packagesPath": "C:\\Users\\Rhyeca\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\ContosoPizza\\obj\\",
+        "outputPath": "C:\\Repos\\DotNetTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
