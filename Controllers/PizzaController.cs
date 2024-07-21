@@ -27,12 +27,14 @@ public class PizzaController : ControllerBase
 
         return pizza;
     }
-    // // POST action
-    // [HttpPost]
-    // public IActionResult Create(Pizza pizza)
-    // {            
-    // }
-    // // PUT action
+    // POST action
+    [HttpPost]
+    public IActionResult Create(Pizza pizza)
+    {         
+        PizzaService.Add(pizza);
+        return CreatedAtAction(nameof(Get), new { id = pizza.Id }, pizza);   
+    }
+    // PUT action
     // [HttpPut("{id}")]
     // public IActionResult Update(int id, Pizza pizza)
     // {
