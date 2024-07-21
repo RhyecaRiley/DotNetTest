@@ -1,17 +1,15 @@
 name: dotnet package
 
 on: 
-  push:
-    branch: 
-      - main
-
+  pull-request:
+  
 jobs:
   build:
     name: Get DotNet Version
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+      
       - name: Setup dotnet ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
         with:
@@ -19,3 +17,13 @@ jobs:
 
       - name: Display dotnet version
         run: dotnet --version
+
+      - name: Install dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build
+
+      # Need to create test #TODO: Create test
+      - name: Test with the dotnet CLI
+        run: dotnet test
