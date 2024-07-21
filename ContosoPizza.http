@@ -6,5 +6,9 @@ Accept: application/json
 GET {{ContosoPizza_HostAddress}}/pizza/
 Accept: application/json
 
+GET {{ContosoPizza_HostAddress}}/salad/
+Accept: application/json
+
+
 ###
 

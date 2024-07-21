@@ -27,20 +27,20 @@ public class PizzaController : ControllerBase
 
         return pizza;
     }
-    // POST action
-    [HttpPost]
-    public IActionResult Create(Pizza pizza)
-    {            
-    }
-    // PUT action
-    [HttpPut("{id}")]
-    public IActionResult Update(int id, Pizza pizza)
-    {
-    }
+    // // POST action
+    // [HttpPost]
+    // public IActionResult Create(Pizza pizza)
+    // {            
+    // }
+    // // PUT action
+    // [HttpPut("{id}")]
+    // public IActionResult Update(int id, Pizza pizza)
+    // {
+    // }
 
-    // DELETE action
-    [HttpDelete("{id}")]
-    public IActionResult Delete(int id)
-    {
-    }
+    // // DELETE action
+    // [HttpDelete("{id}")]
+    // public IActionResult Delete(int id)
+    // {
+    // }
 }
