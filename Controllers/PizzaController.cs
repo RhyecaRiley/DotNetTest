@@ -30,17 +30,19 @@ public class PizzaController : ControllerBase
     // POST action
     [HttpPost]
     public IActionResult Create(Pizza pizza)
-    {            
+    {         
+        PizzaService.Add(pizza);
+        return CreatedAtAction(nameof(Get), new { id = pizza.Id }, pizza);   
     }
     // PUT action
-    [HttpPut("{id}")]
-    public IActionResult Update(int id, Pizza pizza)
-    {
-    }
+    // [HttpPut("{id}")]
+    // public IActionResult Update(int id, Pizza pizza)
+    // {
+    // }
 
-    // DELETE action
-    [HttpDelete("{id}")]
-    public IActionResult Delete(int id)
-    {
-    }
+    // // DELETE action
+    // [HttpDelete("{id}")]
+    // public IActionResult Delete(int id)
+    // {
+    // }
 }
